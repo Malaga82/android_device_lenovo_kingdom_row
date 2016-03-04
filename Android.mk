@@ -17,7 +17,8 @@
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),kingdom_row)
-include $(call all-makefiles-under,$(LOCAL_PATH))
+
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 # Create a link for the WCNSS config file, which ends up as a writable
 # version in /data/misc/wifi
