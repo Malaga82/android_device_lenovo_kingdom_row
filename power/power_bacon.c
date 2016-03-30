@@ -100,7 +100,7 @@ int get_feature(__attribute__((unused)) struct power_module *module,
                 feature_t feature)
 {
     if (feature == POWER_FEATURE_SUPPORTED_PROFILES) {
-        return 3;
+        return NORMAL_MAX_FREQ;
     }
     return -1;
 }
@@ -118,6 +118,6 @@ struct power_module HAL_MODULE_INFO_SYM = {
     .init = power_init,
     .powerHint = power_hint,
     .setInteractive = power_set_interactive,
-    .setFeature = set_feature
+    .setFeature = set_feature,
     .getFeature = get_feature
 };
