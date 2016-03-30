@@ -96,6 +96,15 @@ void set_feature(__attribute__((unused)) struct power_module *module,
 #endif
 }
 
+int get_feature(__attribute__((unused)) struct power_module *module,
+                feature_t feature)
+{
+    if (feature == POWER_FEATURE_SUPPORTED_PROFILES) {
+        return 3;
+    }
+    return -1;
+}
+
 struct power_module HAL_MODULE_INFO_SYM = {
     .common = {
         .tag = HARDWARE_MODULE_TAG,
