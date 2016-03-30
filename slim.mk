@@ -12,19 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
 # Inherit from kingdom_row device
 $(call inherit-product, device/lenovo/kingdom_row/kingdom_row.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
-PRODUCT_NAME := cm_kingdom_row
+# Copy device specific prebuilt files
+PRODUCT_COPY_FILES +=  \
+    vendor/slim/prebuilt/common/bootanimation/1600.zip:system/media/bootanimation.zip \
+    vendor/slim/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/slim/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+
+PRODUCT_NAME := slim_kingdom_row
 PRODUCT_DEVICE := kingdom_row
 PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_MODEL := K920

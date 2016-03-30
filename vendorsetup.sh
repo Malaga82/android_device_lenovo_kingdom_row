@@ -1,3 +1,3 @@
-add_lunch_combo cm_kingdom_row-user
-add_lunch_combo cm_kingdom_row-userdebug
-add_lunch_combo cm_kingdom_row-eng
+add_lunch_combo slim_kingdom_row-user
+add_lunch_combo slim_kingdom_row-userdebug
+add_lunch_combo slim_kingdom_row-eng
