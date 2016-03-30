@@ -71,6 +71,10 @@ PRODUCT_PACKAGES += \
     libtfa98xx \
     tinymix
 
+# Power
+PRODUCT_PACKAGES += \
+    power.bacon
+
 PRODUCT_PROPERTY_OVERRIDES += \
      mm.enable.smoothstreaming=true \
      ro.qc.sdk.audio.fluencetype=fluence \
