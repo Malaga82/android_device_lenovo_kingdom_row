@@ -1,1 +1,1 @@
-add_lunch_combo cm_Z1-eng
+add_lunch_combo cm_kingdom_row-eng
