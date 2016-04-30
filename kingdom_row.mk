@@ -78,8 +78,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
      mm.enable.smoothstreaming=true \
+     mm.enable.qcom_parser=37491 \
      ro.qc.sdk.audio.fluencetype=fluence \
      persist.audio.fluence.voicecall=true \
+     persist.audio.fluence.voicerec=false \
+     persist.audio.fluence.speaker=false \
      audio.offload.buffer.size.kb=32 \
      av.offload.enable=true \
      av.streaming.offload.enable=true \
@@ -126,7 +129,6 @@ PRODUCT_PACKAGES += \
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
-    FMRecord \
     libqcomfm_jni \
     qcom.fmradio
 
