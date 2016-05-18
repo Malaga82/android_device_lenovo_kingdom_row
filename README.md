@@ -1,1 +1,0 @@
-TWRP device tree for Lenovo Vibe Z2 Pro kingdom_row. Omni build.

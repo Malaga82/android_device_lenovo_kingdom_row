@@ -1,1 +1,1 @@
-add_lunch_combo cm_kingdom_row-eng
+add_lunch_combo omni_kingdom_row-eng
